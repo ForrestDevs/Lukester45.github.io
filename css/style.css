@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #162a43;
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+}
+.pageWrapper {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/*#region HEADER */
+#header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5%;
+}
+#header-buttons {
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#header-line-main {
+    width: 65vw;
+    height: 1px;
+    margin-left: 1vw;
+    background-color: #fff;
+}
+#header-buttons a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1vw;
+}
+#gearshed-logo-white {
+    position: absolute;
+    width: 6.5vw;
+    margin-top: 6%;
+}
+#gearshed-logo-black {
+    position: absolute;
+    width: 6.5vw;
+    margin-top: 6%;
+    opacity: 0;
+}
+/*#endregion HEADER */
+
+/*#region HOME */
+#homeSection {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 139, 139);
+    
+}
+#homeSVG {
+    position: absolute;
+    z-index: -1;
+    
+} 
+.homeSection img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    object-fit:cover;
+}
+.punchLines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.punchLines p {
+    color: #162a43;
+    font-size: 3vw;
+    padding-top: 10% ;
+    margin-left: 1.5%;
+    opacity: 0;
+}
+/*#endregion HOME */
+
+/*#region ABOUT */
+#aboutSection { 
+    padding: 5em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.aboutHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    text-transform: uppercase;
+    /* background-color: blue; */
+}
+.aboutInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(132, 255, 147); */
+} 
+.aboutInfo img {
+    width: 15%;
+    height: auto;
+}
+.aboutText {
+    width: 50%;
+}
+.appStoreDownload {
+    /* background-color: rgb(57, 57, 57); */
+    display: flex;
+    justify-content: center;
+}
+.appStoreDownload img {
+    width: 15em;
+    height: auto;
+    /* transform: translateX(500px); */
+}
+
+/*#endregion ABOUT */
+
+/*#region FEATURES */
+#featuresSection {
+    padding: 5em 2em 2em 2em;
+}
+#featuresSection img {
+    width: 15em;
+    height: auto;
+}
+/*#endregion FEATURES */
+
+/*#region PRICING */
+#pricingSection { 
+    height: 50vh;
+    padding: 10vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.pricingSection p {
+    color: #162a43;
+    font-size: 5vw;
+    text-decoration: underline;
+}
+.pricingCards {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+/*     align-items: first-baseline; */
+/*     align-items: flex-start;
+    flex-wrap: column; */
+}
+.singlePricingCard { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+/*     border: solid 2px #162a43; */
+/*     border-radius: 5vw; */
+    /* background: #04fc84; */
+    margin: 2vw;
+    width: 20vw;
+    height: 20vw;
+}
+#pricingCardHeader {
+    font-size: 2.5vw;
+    text-decoration: underline;
+    margin: 1vh 0vh;
+}
+.pricingCardFeatures {
+    font-size: 1.5vw;
+}
+#pricingCardPrice {
+    font-size: 2.5vw;
+    text-decoration: none;
+/*     margin: 1vh 0vh; */
+}
+/*#endregion PRICING */
+
+/*#region FAQ*/
+#faqSection {
+    padding: 5em 2em 2em 2em;
+}
+#faqSection h2 {
+    text-align: center;
+}
+.accordion .accordion-item {
+    border-bottom: 1px solid #162a43;
+}
+.accordion .accordion-item button[area-expanded='true'] {
+    border-bottom: 1px solid #162a43;
+}
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    /* font-size: 1.15rem;
+    font-weight: 400; */
+    border: none;
+    background: none;
+    outline: none;
+}
+.accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+.accordion button:hover::after, .accordion button:focus::after  {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+.accordion button[area-expanded='true'] {
+    color: #03b5d2;
+}
+.accordion button[area-expanded='true'] .icon::after {
+    width: 0;
+}
+.accordion button[area-expanded='true'] + .accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+    /* font-size: 1rem;
+    font-weight: 300; */
+    margin: 2em 0;
+}
+/*#endregion FAQ */
+
+/*#region DOWNLOADNOW */
+#downloadNow {
+    text-align: center;
+    padding: 0 0 3em 0;
+    color: #162a43;
+}
+#downloadNow .downloadNowHeader {
+    margin: 0 0 1em 0;
+}
+#downloadNow .downloadNowHeader:after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    margin-top: 1.5em;
+    width: 8em;
+    background: #505050;
+}
+#downloadNow p {
+    margin-bottom: 1.5em;
+}
+#downloadNow img {
+    width: 15em;
+    height: auto;
+}
+/*#endregion DOWNLOADNOW */
+
+/*#region FOOTER */
+#footer {
+    padding: 1em 0 2em 0;
+    background-color: rgb(54, 52, 52);
+    color: #fff;
+    text-align: center;
+}
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+#footer a:hover {
+    color: #ffffff;
+} 
+#footer img { 
+    width: 4vw;
+    height: auto;
+}       
+#footer .icons {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#footer .copyright {
+    font-size: 0.8em;
+    list-style: none;
+    margin: 2em 0 0 0;
+    padding: 0;
+}   
+#footer .copyright li {
+    border-left: solid 1px;
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 1em;
+    padding: 0 0 0 1em;
+}        
+#footer .copyright li:first-child {
+    border-left: 0;
+    margin-left: 0;
+    padding: 0;
+}
+/*#endregion FOOTER */
+
+    
+                
+    
+                    
+    
+        
+                
